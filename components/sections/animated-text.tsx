@@ -22,12 +22,10 @@ export default function AnimatedText() {
       ref={ref}
       className="relative flex justify-center text-center mt-20 mb-20 lg:mt-0 font-serif"
     >
-      {/* Texto base (cinza) */}
       <h2 className="text-2xl md:text-3xl lg:text-5xl text-foreground/10">
       on purpose.
       </h2>
 
-      {/* Texto animado (gradiente) */}
       <motion.h2
         style={{ clipPath }}
         className="absolute text-2xl md:text-3xl lg:text-5xl
