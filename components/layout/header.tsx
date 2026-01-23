@@ -4,6 +4,7 @@ import { heroLinks as data } from "@/constants/landing";
 import { heroLinksProps as links } from "@/types/types";
 import { useState } from "react";
 import { Text } from "../ui/base-text";
+import DropDownMenu from "../sections/drop-down-menu";
 
 const Header = () => {
   const [links] = useState<links[]>(data);
@@ -15,7 +16,7 @@ const Header = () => {
           dev.
         </Text>
         <nav>
-          <ul className="flex gap-6">
+          <ul className="hidden lg:flex lg:gap-6">
             {links?.map((link, index) => (
               <li key={index}>
                 <a
@@ -28,6 +29,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+        <DropDownMenu />
       </section>
     </header>
   );

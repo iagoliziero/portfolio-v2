@@ -8,7 +8,7 @@ export default function AboutMe() {
     <FadeSection>
       <section className="flex flex-col w-full gap-10 lg:gap-12">
         <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[50%]">
-          <div className="flex flex-col gap-4">
+          <div  className="flex flex-col gap-4">
             <TitleSection subtitle="Quem eu sou?"> Sobre </TitleSection>
           </div>
           <div className="flex flex-col gap-7">

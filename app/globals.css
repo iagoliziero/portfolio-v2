@@ -13,8 +13,10 @@
   --font-serif: var(--font-serif);
 }
 
-body {
+body, html {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 * {

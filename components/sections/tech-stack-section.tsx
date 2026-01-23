@@ -44,6 +44,7 @@ export default function TechStack() {
               </div>
             ))}
           </div>
+          <span> <Text colors="mutedForeground" size="md" className="leading-relaxed italic"> Isso é o que eu realmente uso no dia a dia. </Text> </span>
         </div>
       </section>
     </FadeSection>
