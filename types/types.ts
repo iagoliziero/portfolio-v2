@@ -16,4 +16,5 @@ export type projectProps = {
   problem: string;
   solution: string;
   stack: string[];
+  link?: string;
 }

@@ -58,23 +58,20 @@ export const projects: project[] = [
   {
     id: 1,
     title: "Peak Form",
-    context:
-      "Plataforma de gerenciamento de treinos com integração a um backend completo em arquitetura MVC.",
-    problem:
-      "Dificuldade em manter a autenticação segura e o estado global consistente entre os componentes do front-end.",
-    solution:
-      "Implementar autenticação JWT na conexão com o backend e gerenciar as variáveis globais utilizando a Context API.",
-    stack: ["Vite", "React", "Javascript", "Tailwind"],
+    context: "Plataforma front-end para gerenciamento de treinos integrada a um backend MVC.",
+    problem: "Gerenciar autenticação e estado global de forma consistente no front-end.",
+    solution: "Autenticação JWT integrada ao backend e estado global com Context API.",
+    stack: ["Vite", "React", "JavaScript", "Tailwind"],
+    link: "https://github.com/iagoliziero/peak-form",
   },
   {
     id: 2,
     title: "Backend Peak Form",
-    context:
-      "API RESTful com autenticação JWT para gerenciar usuários, treinos e dados corporais.",
-    problem:
-      "Falta de um backend estruturado, seguro e integrado a um banco de dados confiável.",
-    solution:
-      "Desenvolver um backend completo com autenticação JWT e integração com um banco relacional PostgreSQL.",
-    stack: ["Node", "Javascript", "Express", "JWT", "PostgreSQL"],
-  },
+    context: "API REST para gerenciamento de usuários, treinos e métricas corporais.",
+    problem: "Ausência de backend seguro e estruturado para persistência de dados.",
+    solution: "Backend em Node.js com JWT e PostgreSQL.",
+    stack: ["Node.js", "JavaScript", "Express", "JWT", "PostgreSQL"],
+    link: "https://github.com/iagoliziero/backend-peakform",
+  }
+  
 ];

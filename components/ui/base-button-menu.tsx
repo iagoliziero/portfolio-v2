@@ -1,13 +1,12 @@
 import { useState } from "react";
 
 const ButtonMenu = ({
-    isOpen,
-    onClick,
-  }: {
-    isOpen: boolean;
-    onClick: () => void;
-  }) => {
-
+  isOpen,
+  onClick,
+}: {
+  isOpen: boolean;
+  onClick: () => void;
+}) => {
   return (
     <button
       onClick={onClick}
@@ -32,17 +31,13 @@ const ButtonMenu = ({
         />
         <path
           className={
-            isOpen
-              ? "[transform:rotate(22.5deg)_translate(15.5%,-23%)]"
-              : ""
+            isOpen ? "[transform:rotate(22.5deg)_translate(15.5%,-23%)]" : ""
           }
           d="m2.02,17.13c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L21.6,6.94c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L2.4,17.06c-.13.05-.25.08-.38.08Z"
         />
         <path
           className={
-            isOpen
-              ? "[transform:rotate(112.5deg)_translate(-15%,-149.5%)]"
-              : ""
+            isOpen ? "[transform:rotate(112.5deg)_translate(-15%,-149.5%)]" : ""
           }
           d="m8.91,21.99c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31l11.64-4.82c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31l-11.64,4.82c-.13.05-.25.08-.38.08Z"
         />

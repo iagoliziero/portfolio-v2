@@ -6,8 +6,8 @@ import { FadeSection } from "../layout/fade-section";
 export default function HeroSection() {
   return (
     <FadeSection>
-      <section className="flex flex-col gap-8 mt-40 lg:mt-64">
-        <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[50%]">
+      <section className="flex flex-col gap-8 mt-54 lg:mt-64">
+        <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
           <Image
             src="/img-iago.png"
             width={120}
@@ -16,12 +16,12 @@ export default function HeroSection() {
             data-clickable
             className="rounded-full shadow-lg grayscale active:grayscale-0 lg:hover:grayscale-0 transition-all duration-30"
           />
-          <h1 className="text-3xl lg:text-5xl font-serif text-foreground">
+          <h1 className="text-3xl lg:text-4xl font-serif text-foreground">
             Desenvolvo software com foco em{" "}
             <span className="text-primary"> clareza, performance </span> e{" "}
             <span className="text-primary"> manutenção. </span>{" "}
           </h1>
-          <Text colors="mutedForeground" className="text-md lg:text-lg">
+          <Text colors="mutedForeground" size="md">
             {" "}
             Full Stack Developer baseado em São Paulo, SP. Código como ofício,
             não como vitrine.{" "}
