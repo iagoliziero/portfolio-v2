@@ -7,7 +7,7 @@ import { Github } from "lucide-react";
 
 export default function Projects() {
   return (
-    <section className="flex flex-col w-full gap-10 lg:gap-12 mb-64">
+    <section className="flex flex-col w-full gap-10 lg:gap-12">
       <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
         <FadeSection>
           <div className="flex flex-col gap-4">
