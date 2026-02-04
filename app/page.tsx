@@ -9,7 +9,7 @@ import TechStack from "@/components/sections/tech-stack-section";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-40 lg:gap-64 w-full">
+    <main className="flex flex-col gap-40 lg:gap-56 w-full">
       <HeroSection />
       <AnimatedText />
 

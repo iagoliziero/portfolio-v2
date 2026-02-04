@@ -5,6 +5,8 @@ import { stackProps } from "@/types/types";
 import { stack } from "@/constants/landing";
 import TitleSection from "./title-section";
 import { FadeSection } from "../layout/fade-section";
+import { FloatingIcon } from "./floating-icon";
+import { Layers } from "lucide-react";
 
 export default function TechStack() {
   const [stackItems] = useState<stackProps[]>(stack);
@@ -13,6 +15,11 @@ export default function TechStack() {
     <FadeSection>
       <section className="bg-background-secondary py-32 w-full">
         <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
+          <div className="relative">
+            <FloatingIcon>
+              <Layers size={55} />
+            </FloatingIcon>
+          </div>
           <TitleSection subtitle="Tecnologias que uso."> Stack </TitleSection>
 
           <div className="flex flex-col gap-7">

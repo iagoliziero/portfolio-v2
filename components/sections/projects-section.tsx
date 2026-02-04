@@ -3,12 +3,18 @@ import { projects } from "@/constants/landing";
 import { FadeSection } from "../layout/fade-section";
 import { Text } from "../ui/base-text";
 import TitleSection from "./title-section";
-import { Github } from "lucide-react";
+import { Github, Rocket } from "lucide-react";
+import { FloatingIcon } from "./floating-icon";
 
 export default function Projects() {
   return (
     <section className="flex flex-col w-full gap-10 lg:gap-12">
       <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
+        <div className="relative">
+          <FloatingIcon>
+            <Rocket size={55} />
+          </FloatingIcon>
+        </div>
         <FadeSection>
           <div className="flex flex-col gap-4">
             <TitleSection subtitle="O que desenvolvi."> Projetos </TitleSection>

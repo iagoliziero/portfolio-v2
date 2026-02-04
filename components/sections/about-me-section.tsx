@@ -1,6 +1,8 @@
 "use client";
+import { Target } from "lucide-react";
 import { FadeSection } from "../layout/fade-section";
 import { Text } from "../ui/base-text";
+import { FloatingIcon } from "./floating-icon";
 import TitleSection from "./title-section";
 
 export default function AboutMe() {
@@ -8,6 +10,11 @@ export default function AboutMe() {
     <FadeSection>
       <section className="flex flex-col w-full gap-10 lg:gap-12">
         <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
+          <div className="relative">
+            <FloatingIcon>
+              <Target size={55} />
+            </FloatingIcon>
+          </div>
           <div className="flex flex-col gap-4">
             <TitleSection subtitle="Quem eu sou?"> Sobre </TitleSection>
           </div>

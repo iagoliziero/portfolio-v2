@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Text } from "../ui/base-text";
 import DropDownMenu from "../sections/drop-down-menu";
 
-const Header = () => {
+export function Header(){
   const [links] = useState<links[]>(data);
 
   return (
@@ -34,5 +34,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

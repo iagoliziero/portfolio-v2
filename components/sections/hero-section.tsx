@@ -6,30 +6,13 @@ import { FloatingIcon } from "./floating-icon";
 import { useEffect, useState } from "react";
 
 export default function HeroSection() {
-  const [size, setSize] = useState(70);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const handleResize = () => {
-      const newSize = window.innerWidth < 1280 ? 50 : 60;
-
-      setSize((prev) => (prev !== newSize ? newSize : prev));
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <FadeSection>
       <section className="flex flex-col gap-8 mt-44 lg:mt-52">
         <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
           <div className="relative">
             <FloatingIcon>
-              <Atom size={size} />
+              <Atom size={55} />
             </FloatingIcon>
           </div>
           <Image
@@ -56,8 +39,10 @@ export default function HeroSection() {
               <li className="font-semibold animate-fade-in-delay-3">
                 {" "}
                 <a
+                  href="https://github.com/iagoliziero"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm font-medium text-foreground underline underline-offset-4 decoration-muted-foreground/40 hover:decoration-foreground transition-colors"
-                  href=""
                 >
                   {" "}
                   Ver projetos
@@ -65,7 +50,7 @@ export default function HeroSection() {
               </li>
               <li className="text-muted-foreground hover:text-foreground">
                 {" "}
-                <a href="">Entrar em contato</a>{" "}
+                <a href="https://www.linkedin.com/in/iagoliziero/" target="_blank" rel="noopener noreferrer">Entrar em contato</a>{" "}
               </li>
             </nav>
           </ul>

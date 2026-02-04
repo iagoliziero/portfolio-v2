@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/header";
 import { LenisProvider } from "@/components/providers/lenis-provider";
 import { CustomCursor } from "@/components/ui/custom-cursor";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
           <CustomCursor />
           <Header />
           {children}
+          <Footer />
         </LenisProvider>
       </body>
     </html>

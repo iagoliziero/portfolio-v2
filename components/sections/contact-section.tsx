@@ -1,13 +1,20 @@
 "use client";
+import { Send } from "lucide-react";
 import { FadeSection } from "../layout/fade-section";
 import { Text } from "../ui/base-text";
+import { FloatingIcon } from "./floating-icon";
 import TitleSection from "./title-section";
 
 export default function Contact() {
   return (
     <FadeSection>
-      <section className="flex flex-col w-full gap-10 lg:gap-12 mb-[600px]">
+      <section className="flex flex-col w-full gap-10 lg:gap-12">
         <div className="mx-auto max-w-5xl flex flex-col gap-10 lg:gap-12 px-6 w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[45%]">
+        <div className="relative">
+          <FloatingIcon>
+            <Send size={55} />
+          </FloatingIcon>
+        </div>
           <div className="flex flex-col gap-4">
             <TitleSection subtitle="Vamos conversar."> Contato </TitleSection>
           </div>
@@ -30,11 +37,11 @@ export default function Contact() {
                 </li>
                 <li className="text-muted-foreground hover:text-foreground">
                   {" "}
-                  <a href="">Github</a>{" "}
+                  <a href="https://github.com/iagoliziero" target="_blank" rel="noopener noreferrer">Github</a>{" "}
                 </li>
                 <li className="text-muted-foreground hover:text-foreground">
                   {" "}
-                  <a href="">Linkedin</a>{" "}
+                  <a href="https://www.linkedin.com/in/iagoliziero/" target="_blank" rel="noopener noreferrer">Linkedin</a>{" "}
                 </li>
               </nav>
             </ul>
