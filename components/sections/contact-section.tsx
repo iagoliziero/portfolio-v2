@@ -24,7 +24,7 @@ export default function Contact() {
               interessantes.
             </Text>
             <ul className="list-none flex flex-col lg:flex-row gap-4 lg:gap-10">
-              <nav className="flex flex-row gap-6 text-sm md:text-md">
+              <nav className="flex flex-row gap-6 text-sm md:text-md flex-wrap">
                 <li className="font-semibold animate-fade-in-delay-3">
                   {" "}
                   <a
